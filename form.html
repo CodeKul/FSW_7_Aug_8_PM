@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body>
+        <!-- 
+             form attributes :
+                name -> Build identity for ur form
+                action -> api calling
+                onsubmit -> js function call
+                method -> Its for security 
+         -->
+        <form name="" action="" onsubmit="" method="">
+            <label for="">User Name : </label>
+            <input type=""  placeholder="Watermak" value="15"/>
+            <!-- 
+                type -> Which type of data u want from client/user
+                name -> indetity and fetch data in backend
+                id   -> Fetch data in js
+                placeholder -> Watermak text
+                value -> Set default value of that field
+                min -> Minimum value of that field ex:1
+                max -> Maximum value of that field ex:15
+                minlength -> Minimum num of character
+                maxlength -> Maximum num of character
+             -->
+
+             <input type="text" placeholder="text" required  />
+             <input type="email" placeholder="email" value="abc@gmail.com" readonly />
+             <input type="url" placeholder="url"  disabled/>
+             <input type="password" placeholder="password" />
+             <input type="tel" placeholder="tel" maxlength="10" minlength="10" />
+             <input type="number" placeholder="number" min="5" max="15" />
+             <textarea rows="5" cols="50"></textarea>
+
+             <br/>
+             <input type="file" multiple />
+             <input type="color" />
+             <input type="range" />
+
+             <br/>
+             <input type="month" />
+             <input type="week" />
+             <input type="date" min="2000-05-01" max="2002-05-05" />
+             <input type="time" />
+             <input type="datetime-local" />
+ 
+             <br/>
+             <label>City : </label>
+             <select>
+                <option>...</option>
+                <option value="Pune">Pune</option>
+                <option value="surat">Surat</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi">Delhi</option>
+             </select>
+             <br/>
+             <lable>Gender : </lable>
+             <input type="radio" name="gender" value="Male" />Male
+             <input type="radio" name="gender" value="Female"/> Female
+             <input type="radio" name="gender" value="Other" />  Other
+             <br/>
+             <label>Hobbies :</label>
+             <input type="checkbox" name="hobbies" value="reading">Reading
+             <input type="checkbox" name="hobbies" value="music">Music
+             <input type="checkbox" name="hobbies." value="travel">Travel
+
+             <br/>
+             <input type="submit" />
+             <input type="reset" />
+             <input type="button" value="btn" />
+
+        </form>
+    </body>
+</html>
