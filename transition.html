@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>transition</title>
+        <style>
+            
+            .hov{
+                height: 200px;
+                width: 200px;
+                background-color: rgb(132, 88, 35);
+                /* transition-duration: 5s; */
+                transition: height 5s, width 5s,background-color 10s, border-radius 15s;
+                transition-delay: 2s;
+            }
+
+            .hov:hover{
+                background-color: red;
+                height: 300px;
+                width: 300px;
+                border-radius: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="hov"></div>
+    </body>
+</html>
