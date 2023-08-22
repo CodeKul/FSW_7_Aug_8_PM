@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>BTN HOver With befor</title>
+        <style>
+            body{
+                background-color: black;
+            }
+            button{
+                /* height: ; */
+                background-color: transparent;
+                color: white;
+                border: none;
+                font-size: 30px;
+            }
+            button::after{
+                content: '';
+                display: block;
+                height: 10px;
+                width: 100%;
+                background-color: goldenrod;
+                transform: scaleX(0);
+                transform-origin: left;
+                transition-duration: 0.5s;
+            }
+            button:hover::after{
+                transform: scaleX(1);
+            }
+        </style>
+    </head>
+    <body>
+            <button>Click me</button>
+    </body>
+</html>

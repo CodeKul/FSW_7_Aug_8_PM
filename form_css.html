@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Form CSS</title>
+        <style>
+            form{
+                width: 50%;
+                background-color: bisque;
+            }
+            .main{
+                display: flex;
+                margin: 1%;
+                justify-content: center;
+                flex-wrap: wrap;
+            }    
+            .forlabels{
+                width: 20%;
+            }
+            input{
+                width: 100%;
+            }
+
+            input[type=text]{
+                background-image: url(https://www.freeiconspng.com/thumbs/computer-user-icon/computer-user-icon-28.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position-x: 100%;
+            }
+
+            input[type=submit]{
+                width: 20%;
+                background-color: transparent;
+                padding: 0.5%;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+        </form>
+
+        <form>
+        <div class="main">
+            <div class="forlabels">
+                <label>User Name : </label>
+            </div>
+            <div class="forinput">
+                <input type="text" />
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="forlabels">
+                <label>Password : </label>
+            </div>
+            <div class="forinput">
+            <input type="password" /><br/>
+            </div>
+        </div>
+
+            <div class="main">
+                    <input type="submit" />
+            </div>
+
+        </form>
+    </body>
+</html>

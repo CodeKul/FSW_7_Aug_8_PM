@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Transform</title>
+        <style>
+            body{
+                margin: 5%;
+            }
+            .rotate{
+                height: 150px;
+                width: 150px;
+                background-color: thistle;
+                transform: rotate(0deg);
+                transition-duration: 2s
+            }
+            .rotate:hover{
+                transform: rotate(360deg);
+            }
+
+            .skew{
+                height: 150px;
+                width: 150px;
+                margin: 1%;
+                background-color: teal;
+                transform: skew(10deg,10deg);
+                box-shadow: 10px 10px 0px rgb(1, 74, 74);
+            }
+
+            .scale{
+                height: 150px;
+                width: 150px;
+                background-color: turquoise;
+                margin: 5%;
+                transform: scale(1);
+                transition-duration: 2s;
+            }
+            .scale:hover{
+                transform: scale(2);
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="rotate">Hello</div>
+
+        <div class="skew"></div>
+
+        <div class="scale"></div>
+    </body>
+</html>

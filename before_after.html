@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Before & After</title>
+        <style>
+            .box{
+                background-color: teal;
+                color: rgb(255, 255, 255);
+            }
+
+            .box::before{
+                content: 'before effect';
+                /* height: ; */
+                padding: 2%;
+                background-color: rgb(82, 187, 187);
+            }
+
+            .box::after{
+                content: 'After';
+                padding: 1%;
+                background-color: rgb(56, 182, 182);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sed, eaque consequuntur assumenda architecto eveniet! Ratione officiis excepturi sapiente deserunt?</div>
+    </body>
+</html>
