@@ -1,0 +1,45 @@
+How To run Js files :
+.. node FileName
+.. Where -> In Terminal
+
+How to print in Js :
+.. console.log(Statement);
+
+Variables :
+    .. One kind of Container
+    .. How to define :
+        .. var
+            . var VariableName;
+            . global , Old version, temp
+
+        .. let 
+            . let VariableName;
+            . local, new version, temp
+        
+        .. const 
+            . const VariableName;
+            . local, new version, per
+
+DataTypes:
+    .. Number
+            . int   -> 10,5,,7,45 ,etc
+            . float -> 1.2
+
+    .. String
+            . ' '
+            . " "
+            . ` ` -> When you want to put variable Data in Between Statement
+
+    .. Object
+            . it store multiple + Multy Type of data
+            .. array
+                    . [data1,data2,etc]
+
+            .. Dictionary
+                    . {key:value,key1:value1}
+
+    .. Bool
+            . true
+            . false
+
+.. Check the dataType -> typeof(statement)
