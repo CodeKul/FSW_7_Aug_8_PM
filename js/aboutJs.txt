@@ -42,4 +42,30 @@ DataTypes:
             . true
             . false
 
-.. Check the dataType -> typeof(statement)
+.. Check the dataType -> typeof(statement);
+
+Operators :
+     
+     .. arithmetic      -> + - * / ** % 
+     .. assignment      -> = += -= *= /= 
+     .. comparision     -> < > <= >= == === != !== 
+     .. string          -> +(concate)
+     .. Logical         -> && ||
+     .. Bitwise         -> & |
+     .. type            -> typeof(statement)
+
+Conditions :
+        .. if(Conditions){statement}
+        .. else if(Conditions){statement}
+        .. else{statement} -> Default value
+
+Loop :
+        .. While
+                .. startpoint
+                .. while(endPoint){
+                        statement
+                        increment/decrement
+                }
+
+        .. for
+                .. for(startpoint,endPoint,increment/decrement){statement}
