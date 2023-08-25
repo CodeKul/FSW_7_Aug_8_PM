@@ -69,3 +69,19 @@ Loop :
 
         .. for
                 .. for(startpoint,endPoint,increment/decrement){statement}
+
+>> Array Methods
+>> String Methods
+>> Date Module
+>> Math Module
+
+>> Functions :
+        .. Normal Function
+                ..  function FunName(parameters){statement}
+
+        .. Arrow Function
+                .. const/let/var FunName = (parameters) =>{statement}
+
+        .. CallBack Function
+
+        .. Emit 
