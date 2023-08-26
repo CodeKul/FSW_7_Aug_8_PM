@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form name="myForm" onsubmit="return valid()" method="post" >
+        <label>User Name : </label>
+        <input type="text" id="uname" />
+        <span id="uerr"></span>
+        <br/>
+        <input type="submit" />
+    </form>
+
+    <script>
+        function valid(){
+            // alert('JS Called !');
+            var userName= document.forms['myForm']['uname'].value ;
+            // console.log(userName);
+            if(userName==''){
+                alert('Please Enter Your User Name !');
+                return false;
+            }
+
+            else if(userName.length<2){
+                document.getElementById('uerr').innerHTML='Please Enter Valid User Name';
+                return false;
+            }
+
+            
+            // return false; //it stop the process
+        }
+    </script>
+</body>
+</html>
