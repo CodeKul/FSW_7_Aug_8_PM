@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        async function ApiData(){
+
+            // fetch and save api in object
+            var FetchAPI= await fetch("https://api.adviceslip.com/advice");
+
+            // Conver api data into JSON
+            var JsonData=await FetchAPI.json();
+
+            console.log(JsonData);
+            document.write(JsonData.slip.id+'<br/>')
+            document.write(JsonData.slip.advice);
+        }
+
+        ApiData();
+
+    </script>
+</body>
+</html>

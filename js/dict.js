@@ -1,6 +1,6 @@
 var di={
     "Name":"Codekul",
-    "Year":2000
+    'Year':2000
 };
 
 console.log(di['Year']);
