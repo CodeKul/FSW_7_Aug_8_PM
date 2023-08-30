@@ -14,8 +14,12 @@
             document.write(a);
         }
 
-        catch{
-            document.write('Sorry! A is Not available')
+        catch(err){
+            // if(err) throw err;
+            
+            document.write(err);
+            // if(err) throw err;
+            // document.write('Sorry! A is Not available')
         }
     </script>
 </body>

@@ -22,7 +22,7 @@ Variables :
 
 DataTypes:
     .. Number
-            . int   -> 10,5,,7,45 ,etc
+            . int   -> 10,5,7,45 ,etc
             . float -> 1.2
 
     .. String
@@ -83,5 +83,6 @@ Loop :
                 .. const/let/var FunName = (parameters) =>{statement}
 
         .. CallBack Function
+                .. () => {Statement}
 
         .. Emit 
