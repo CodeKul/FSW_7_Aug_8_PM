@@ -7,23 +7,35 @@ import Nav from './Component/Nav';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Component/Home';
 import About from './Component/About';
+import Bootstrapp from './Component/Bootstrapp';
+import Propss from './Component/Propss';
+import Statee from './Component/Statee';
 
 function App() {
   return (
     <>
-        <Header />
-        <Nav />
+        {/* <Header /> */}
+        {/* <Nav /> */}
+        {/* <Bootstrapp/> */}
         
         {/* Module-> react-router-dom */}
 
-        <Routes>
+        {/* <Routes>
             <Route path='/' element={<Home />}  />
             <Route path='/abt' element={<About />} />
-        </Routes>
+        </Routes> */}
 
-        <Footer/>
+        {/* <Footer/> */}
+
+        {/* 
+            props -> properties 
+        */}
+
+        <Propss userName='CodeKul' Location="Pune" />
+        <Statee />
     </>
   );
 }
 
 export default App;
+
