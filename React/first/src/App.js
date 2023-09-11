@@ -10,6 +10,7 @@ import About from './Component/About';
 import Bootstrapp from './Component/Bootstrapp';
 import Propss from './Component/Propss';
 import Statee from './Component/Statee';
+import Chang from './Component/Chang';
 
 function App() {
   return (
@@ -31,8 +32,10 @@ function App() {
             props -> properties 
         */}
 
-        <Propss userName='CodeKul' Location="Pune" />
-        <Statee />
+        {/* <Propss userName='CodeKul' Location="Pune" />
+        <Statee /> */}
+
+        <Chang/>
     </>
   );
 }
