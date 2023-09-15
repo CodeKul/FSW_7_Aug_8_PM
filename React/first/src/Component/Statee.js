@@ -9,7 +9,7 @@ export default function Statee(){
     // setCount(count+1)
 
     const oncli=()=>{
-        setCount(count+4);
+        setCount(count*3);
     }
     return(
         <>

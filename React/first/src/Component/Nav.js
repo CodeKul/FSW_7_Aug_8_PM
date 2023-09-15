@@ -7,6 +7,7 @@ function Nav() {
             <ul>
                 <li> <NavLink to={'/'}> Home </NavLink> </li>
                 <li> <NavLink to={'/abt'}> About us </NavLink> </li>
+                
             </ul>
         </>
      );

@@ -5,6 +5,7 @@ export default function Effec(){
     const [cal,setCal]=useState(0);
 
     // useEffect(function,dependency)
+    
     // useEffect(()=>{
     //     setTimeout(()=>{
     //         setcount(count+1);

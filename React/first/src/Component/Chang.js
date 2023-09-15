@@ -16,7 +16,7 @@ export default function Chang(){
                 <label>Enter Text : </label>
                 <input type='text' value={text} onChange={onch}  />
                 <input type='color' value={color} onChange={onch1} />
-                <input type='submit' />
+                <input type='submit'  />
             </form>
 
             <h1>Your Text Is : {text}</h1>

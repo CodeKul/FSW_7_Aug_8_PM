@@ -11,12 +11,13 @@ import Bootstrapp from './Component/Bootstrapp';
 import Propss from './Component/Propss';
 import Statee from './Component/Statee';
 import Chang from './Component/Chang';
+import PageNotFound from './Component/PageNotFound';
 
 function App() {
   return (
     <>
-        {/* <Header /> */}
-        {/* <Nav /> */}
+        <Header />
+        <Nav />
         {/* <Bootstrapp/> */}
         
         {/* Module-> react-router-dom */}
@@ -24,6 +25,7 @@ function App() {
         {/* <Routes>
             <Route path='/' element={<Home />}  />
             <Route path='/abt' element={<About />} />
+            <Route path='*' element={<PageNotFound />} />
         </Routes> */}
 
         {/* <Footer/> */}
@@ -32,8 +34,8 @@ function App() {
             props -> properties 
         */}
 
-        {/* <Propss userName='CodeKul' Location="Pune" />
-        <Statee /> */}
+        {/* <Propss userName='CodeKul' Location="Pune" /> */}
+        {/* <Statee /> */}
 
         <Chang/>
     </>
