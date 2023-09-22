@@ -1,0 +1,3 @@
+build package : npm init
+Install : npm i/install moduleName
+Unintall : npm uninstall moduleName
