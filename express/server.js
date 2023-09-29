@@ -1,7 +1,11 @@
 const express=require('express');
 const app=express();
-
+const bodyParser=require('body-parser');
 // API -> listen, get, all, use, post
+
+// Use JSON
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:true}));
 
 // get -> request & response manage
 app.get('/',(req,res)=>{
@@ -20,9 +24,7 @@ app.get('/about',(req,res)=>{
 // Routing parameter
 // How to define route params -> /:ParameterName
 app.get('/api/log/stuff/ad/log/:uname/:passw',(req,res)=>{
-    
     // Admin & jds3edmd
-
     // How to fetch param data
     var username=req.params.uname;
     var passw=req.params.passw;
@@ -34,6 +36,27 @@ app.get('/api/log/stuff/ad/log/:uname/:passw',(req,res)=>{
         res.send('Sorry u r unable to log');
     }
 });
+
+app.get('/form',(req,res)=>{
+    res.sendFile(__dirname+'/form.html');
+});
+
+// POST API 
+app.post('/formm',(req,res)=>{
+    // Fetch data
+    const userName=req.body.username;
+    const email=req.body.email;
+    const likes=req.body.likes;
+    const colorr=req.body.col;
+    const gender=req.body.gender;
+    const hobbies=req.body.hobbies;
+    const city=req.body.city;
+    const dob=req.body.dob;
+    const timee=req.body.time;
+
+    // console.log(hobbies);
+    res.send(userName+ ' ' + email + ' ' + likes + ' '+ colorr + ' ' + gender + ' ' + hobbies + ' '+city+ ' ' + dob + ' ' +timee);
+})
 
 
 // render 404 page using all()
